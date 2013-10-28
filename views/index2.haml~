@@ -1,0 +1,51 @@
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html'}
+    %meta{:charset => "utf-8"}
+    %title Piedra, Papel o Tijeras
+    %link{:href => "/public/css/bootstrap.css", :rel => "stylesheet"}
+    %link{:href => "/public/css/bootstrap-responsive.css", :rel => "stylesheet"}
+    %script{:src => "/public/js/bootstrap.js"}
+    %link{:href => "public/estilo.css", :rel => "stylesheet"}
+  %body
+
+    %ul.nav.nav-tabs
+      %li.dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "/views/index.haml"} 
+          Cambiar Version
+
+
+    .container
+      %center
+        %h1 Juego: Piedra, Papel o Tijeras
+        %br
+        %br
+        %h3 Elige una opcion:
+        %a{:href => '?choice=piedra'}
+          %img.img-rounded{alt: "Piedra", src: "/public/img/Piedra.jpg", style: "width:150px", title: "Piedra"}
+        %a{:href => '?choice=papel',}
+          %img.img-rounded{alt: "Papel", src: "/public/img/Papel.jpg", style: "width:150px", title: "Papel"}
+        %a{:href => '?choice=tijeras'}
+          %img.img-rounded{alt: "Tijeras", src: "/public/img/Tijera.jpg", style: "width:150px", title: "Tijeras"}
+        %a{:href => '?choice=piedra'}
+          %img.img-rounded{alt: "Piedra", src: "/public/img/Piedra.jpg", style: "width:150px", title: "Piedra"}
+        %a{:href => '?choice=papel',}
+          %img.img-rounded{alt: "Papel", src: "/public/img/Papel.jpg", style: "width:150px", title: "Papel"}
+        %a{:href => '?choice=tijeras'}
+          %img.img-rounded{alt: "Tijeras", src: "/public/img/Tijera.jpg", style: "width:150px", title: "Tijeras"}
+        %br
+        %br
+        %br
+        %h2 Jugador: #{player_throw2}
+        %h3 Contra
+        %h2 Maquina: #{computer_throw2}
+        %br
+        %br
+        %h3 Resultado: #{answer2}
+
+    .footer
+      %br
+      %br
+      %br
+      %br
+      %h4 Practica 4: Sistemas Y Tecnologias Web

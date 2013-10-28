@@ -1,0 +1,60 @@
+%html
+  %head
+    %meta{'http-equiv' => 'Content-Type', :content => 'text/html'}
+    %meta{:charset => "utf-8"}
+    %title Piedra, Papel o Tijeras
+    %link{:href => "/public/css/bootstrap.css", :rel => "stylesheet"}
+    %link{:href => "/public/css/bootstrap-responsive.css", :rel => "stylesheet"}
+    %script{:src => "/public/js/bootstrap.js"}
+    %link{:href => "public/estilo.css", :rel => "stylesheet"}
+  %body
+
+    %ul.nav.nav-tabs
+      %li.dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "http://es.wikipedia.org/wiki/Piedra,_papel_o_tijera"}
+          Reglas
+
+
+    .container
+      %center
+        %h1 Juego: Piedra, Papel o Tijeras
+        %br
+        %br
+        %h3 Elige una opcion:
+        %a{:href => '?choice=piedra'}
+          %img.img-rounded{alt: "Piedra", src: "/public/img/Piedra.jpg", style: "width:150px", title: "Piedra"}
+        %a{:href => '?choice=papel',}
+          %img.img-rounded{alt: "Papel", src: "/public/img/Papel.jpg", style: "width:150px", title: "Papel"}
+        %a{:href => '?choice=tijeras'}
+          %img.img-rounded{alt: "Tijeras", src: "/public/img/Tijera.jpg", style: "width:150px", title: "Tijeras"}
+        %br
+        %br
+        %br
+        %h2 Jugador: #{player_throw}
+        %h3 Contra
+        %h2 Maquina: #{computer_throw}
+        %br
+        %br
+        %h3 Resultado: #{answer}
+        %br
+        %br
+        .hero-unit
+          - if (jugadas != 0)
+            %h2 Estadísticas
+            %h5 Ganadas: #{ganadas}
+            %h5 Perdidas: #{perdidas}
+            %h5 Empatadas: #{empatadas}
+            %h5 Total: #{jugadas}
+
+
+    .footer
+      %br
+      %br
+      %br
+      %br
+      %h4 Practica 5: Sistemas Y Tecnologias Web
+<<<<<<< .merge_file_Y51V3m
+=======
+
+
+>>>>>>> .merge_file_9gtKsg
