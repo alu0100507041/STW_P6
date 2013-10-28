@@ -1,0 +1,15 @@
+h1{
+        color: #292CF2;
+}
+
+h2{
+        color: #798ADD;
+}
+
+h3{
+        color: white;
+}
+
+body{
+	background: black;
+}
