@@ -14,7 +14,7 @@ task :test do
 end
 
 desc "Ejecutar pruebas con rspec"
-task :rspec do
+task :spec do
   sh "rspec -Ilib -Ispec spec/piedra_spec.rb"
 end
 
