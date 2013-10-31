@@ -1,4 +1,4 @@
-desc "Ejecucion del servidor para heroku"
+desc "Ejecucion del servidor con los parametros predefinidos"
 task :default do
   sh "bundle exec rackup"
 end
