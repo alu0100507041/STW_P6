@@ -1,5 +1,10 @@
-desc "Ejecutar servidor"
+desc "Ejecucion del servidor con los parametros predefinidos"
 task :default do
+  sh "bundle exec rackup"
+end
+
+desc "Ejecutar servidor"
+task :ejecutar do
   sh "ruby config.ru"
 end
 
