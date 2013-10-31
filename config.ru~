@@ -6,6 +6,7 @@ require './lib/RockPaperScissors/piedra.rb'
 
   use Rack::Session::Cookie,
       :key => 'rack.session', #modificar el nombre mediante el atributo
+      :domain => 'piedrapapelotijeras.com',
       :secret => 'some_secret' #comprueba la integridad de los datos de la cookie
   run RockPaperScissors::App.new
 
