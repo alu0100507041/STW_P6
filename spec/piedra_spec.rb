@@ -31,5 +31,5 @@ describe 'Piedra, Papel o Tijeras' do
      it "Pasandole por parametros tijeras" do
         get "/?choice=tijeras"
         expect(last_response).to be_ok
-     end
+     end 
 end
