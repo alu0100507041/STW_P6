@@ -1,26 +1,16 @@
 #Piedra, Papel o Tijeras
 ================================
 
-<center>![PiedraPapelTijera](http://doctorsito.files.wordpress.com/2013/01/piedra-papel-o-tijera.jpg?w=655)</center>
+<center>![PiedraPapelTijera](http://4.bp.blogspot.com/-SIp0pCxiE9k/UFXHUqIj6vI/AAAAAAAAC_Y/xjPnTNAfSb8/s1600/piedra+papel+tijera.jpg)</center>
 
 ## Objetivo
 
-A partir de la práctica anterior (`STW_P4`) se crearan test unitarios y test de *desarrollo dirigido por pruebas* (*TDD*) con la herramienta rspec. Además, con las sesiones se crearan estadisticas de las partidas jugadas.
+A partir de la práctica anterior (`STW_P5`) se desplegará la aplicación en Heroku.
 
----------------------------
-
-## Test
-
-* Test
-	rake test
-* Rspec
-	rake rspec
---------------------------------------------
+-------------------------
 
 ##Ejecucion
 
-1 rake
-2 www.piedrapapelotijeras.com:3333
+* `http://spooky-mesa-2304.herokuapp.com/`
 
-* *Nota:* Editar `/etc/hosts` para que localhost apunte a *www.piedrapapelotijeras.com*
 
